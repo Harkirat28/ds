@@ -13,7 +13,7 @@ int partition(int arr[], int lb, int ub) {
     int end = ub;
 
     while (start < end) {
-        while (arr[start] <= pivot && start <= ub)
+        while (arr[start] <= pivot && start <= end)
             start++;
 
         while (arr[end] > pivot)
